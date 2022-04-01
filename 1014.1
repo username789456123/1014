@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[60],b[60],c[60],d[60];
+	char Date[7][10]={"MON","TUE","WED","THU","FRI","SAT","SUN"};
+	char t[2];
+	int i=0,j=0,minute;
+	scanf("%s%s%s%s",a,b,c,d);
+	while(i<strlen(a)&&i<strlen(b)){
+		if(a[i]==a[i]&&(a[i]>='A'&&a[i]<='G')){
+			t[0]=a[i];
+			break;
+		}
+		i++;
+	}
+	printf("%s",Date[t[0]-65]);
+	i+=i;
+	while(i<strlen(a)&&i<strlen(b)){
+		if(a[i]==b[i]&&(a[i]>='A'&&a[i]<='N')||(a[i]>='0'&&a[i]<='9')){
+			t[1]=a[i];
+			break;
+		}
+		i++;
+	}
+}
